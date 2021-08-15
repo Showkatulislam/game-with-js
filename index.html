@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Game with js</title>
+</head>
+<body>
+    <header class="mb-12">
+        <h1 class=" text-5xl text-center mt-16 text-pink-400 text-semibold">Funney Game with js</h1>
+    </header>
+    <p class="mb-8 text-purple-600 text-2xl w-2/4 mx-auto text-center text-bold">If you got than you won the game</p>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-y-4">
+                <!-- Game Status -->
+                <div class="bg-green-400 rounded p-5 text-white text-center">
+                    <h1>Game Status</h1>
+                    <p id="game-status">You win game</p>
+                </div>
+                <!-- Game win number -->
+                <div class="bg-yellow-400 rounded p-5 text-center text-white">
+                    <h1 class="text-1xl">Total win</h1>
+                    <span id="win-status">0</span>
+                </div>
+                <!-- Game lost number -->
+                <div class="bg-purple-500	 rounded p-5 text-center text-white">
+                    <h1 class="">Total Lost</h1>
+                    <span id="lost-status">0</span>
+                </div>
+            </div>
+            <div class="flex">
+                <button id="click-btn" class="w-48 mx-auto mt-10 bg-red-500 rounded py-2 text-white font-bold">Click me</button>
+            </div>
+        </section>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
